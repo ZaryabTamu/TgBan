@@ -23,7 +23,12 @@ START_BUTTONS = InlineKeyboardMarkup(
             InlineKeyboardButton(text="➕ ᴀᴅᴅ ᴍᴇ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
         ],
         [
-            InlineKeyboardButton(text="ʜᴇʟᴘ", callback_data="help_back")
+            InlineKeyboardButton(text="ʜᴇʟᴘ", callback_data="help_back"),
+            InlineKeyboardButton(text="sᴏᴜʀᴄᴇ", url="https://github.com/hasnainkk/Tg-BanAll")
+        ],
+        [
+            InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/hasnainkk"),
+            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/Endxoz")
         ]
     ]
 )
