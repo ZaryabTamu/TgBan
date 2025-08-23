@@ -1,30 +1,47 @@
 # Ban All Bot
 
-Ban All Bot is a powerful Telegram bot designed to help group administrators manage users efficiently. With simple commands, admins can ban, unban, kick, mute, or unmute all members in a group, as well as manage other admin functions like unpinning messages. It is particularly useful for cleaning up large groups or taking quick action against problematic users.
+A powerful Telegram bot with admin tools and utilities.
 
 ## Features
 
-- **Add the Bot to Groups:** Easily add the bot to any Telegram group using the provided link button.
-- **Ban All Members:** Use `/banall` to ban all members in a group except admins. A powerful tool for group cleanup or removing problematic members.
-- **Unban All Members:** The `/unbanall` command allows you to reverse the ban on all previously banned members in a group.
-- **Kick All Members:** Use `/kickall` to kick all group members except admins.
-- **Mute All Members:** With `/muteall`, you can mute all group members in one go, preventing them from sending messages.
-- **Unmute All Members:** Unmute all group members using `/unmuteall`, removing any restrictions imposed on them.
-- **Unpin All Messages:** The `/unpinall` command allows admins to unpin all pinned messages in the group.
-- **Interactive Help Menu:** Accessible via the "Help" button, displaying detailed information about all commands.
+- Mass management commands (banall, kickall, muteall, etc.)
+- Broadcast messages to all users
+- User and group statistics
+- Sudo user support
 
+## Deployment
 
-## Getting Started
+1. Clone the repository
+2. Install requirements: `pip install -r requirements.txt`
+3. Set up environment variables in config.py
+4. Run the bot: `python -m hasnainkk`
 
-### Prerequisites
+## Environment Variables
 
-Before you start, you will need:
+- `API_ID` - Your Telegram API ID
+- `API_HASH` - Your Telegram API Hash
+- `TOKEN` - Your bot token from @BotFather
+- `SUDO` - Sudo users IDs (comma separated)
+- `START_IMG` - Start message image URL
+- `LOG_CHANNEL` - Log channel ID
+- `DATABASE_URL` - Database URL (optional)
 
-- A Telegram bot token from [BotFather](https://t.me/BotFather).
-- Generate your id from [𝖲𝗒𝗅𝖿𝗂𝖾](https://t.me/Sylfie_Roxbot)
-- Add [𝖲𝗒𝗅𝖿𝗂𝖾](https://t.me/Sylfie_Roxbot) in your group and Make admin
-- Python 3.10 or higher installed on your machine or server.
-- A platform to run the bot (local server or cloud hosting).
+## Commands
+
+- `/start` - Start the bot
+- `/help` - Show help message
+- `/banall` - Ban all members in a group
+- `/unbanall` - Unban all members in a group
+- `/kickall` - Kick all members in a group
+- `/muteall` - Mute all members in a group
+- `/unmuteall` - Unmute all members in a group
+- `/unpinall` - Unpin all messages in a group
+- `/stats` - Show bot statistics
+- `/users` - Get list of all users
+- `/groups` - Get list of all groups
+- `/broadcast` - Broadcast a message to all users
+- `/log` - Get bot log file
+- `/restart` - Restart the bot
 
 ### Installation
 
@@ -35,10 +52,6 @@ To set up the bot on your local machine:
    git clone https://github.com/hasnainkk-07/Tg-BanAll.git
    cd Tg-BanAll
 
-2. **Run the Bot**
- ```bash
-python3 -m hasnainkk   
-```
 
 
 
