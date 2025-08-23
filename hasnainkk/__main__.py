@@ -1,9 +1,15 @@
 from hasnainkk import app, START_IMG, BOT_USERNAME, BOT_NAME, LOG, BOT_ID, SUDO
 from pyrogram import filters
-from hasnainkk.utils.hasnainkk import admin_filter
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery, ChatPermissions
+from hydragram import handler, setup 
 
-SPECIAL_USER_ID = 6346273488
+
+setup(
+    OWNER_ID=6346273488,  # Replace Your user ID and generate from @Raiden_Robot
+    DEV_USERS=[8171988347, 5907205317],  # Your dev team Id and generate Their I'd from @Raiden_Robot
+    PREFIX_HANDLER=["/", "!" "Raiden ", "raiden "],  # Command prefixes
+    BOT_USERNAME="Bot_RoxBot"  # Your bot's username
+)
 
 START_MSG = """
 ʜᴇʏ **{}**, ɪ ᴀᴍ {},
@@ -40,7 +46,8 @@ HELP_MSG = """
 ᴄʀᴇᴀᴛᴇᴅ ʙʏ: [Hasnain khan](https://t.me/hasnainkk)
 """
 
-@app.on_message(filters.command("start"))
+
+@hanlder("start", dev_cmd=True, admin_cmd=True)
 async def start(_, msg):
     await msg.reply_photo(
         photo=START_IMG,
@@ -53,7 +60,7 @@ async def help_back(_, callback_query: CallbackQuery):
     query = callback_query.message
     await query.edit_caption(HELP_MSG)
 
-@app.on_message(filters.command("banall") & admin_filter & filters.user(SUDO | SPECIAL_USER_ID))
+@handler("banall", dev_cmd=True, admin_cmd=True)
 async def ban_all(_, msg):
     chat_id = msg.chat.id
     bot = await app.get_chat_member(chat_id, BOT_ID)
@@ -69,7 +76,7 @@ async def ban_all(_, msg):
     else:
         await msg.reply_text("ᴇɪᴛʜᴇʀ ɪ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴛʜᴇ ʀɪɢʜᴛ ᴛᴏ ʀᴇsᴛʀɪᴄᴛ ᴜsᴇʀs ᴏʀ ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ɪɴ sᴜᴅᴏ ᴜsᴇʀs")
 
-@app.on_message(filters.command("unbanall") & admin_filter & filters.user(SUDO | SPECIAL_USER_ID))
+@handler("unbanall", dev_cmd=True, admin_cmd=True)
 async def unban_all(_, msg):
     chat_id = msg.chat.id
     banned_users = []
@@ -88,7 +95,7 @@ async def unban_all(_, msg):
     else:
         await msg.reply_text("ᴇɪᴛʜᴇʀ ɪ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴛʜᴇ ʀɪɡʜᴛ ᴛᴏ ʀᴇsᴛʀɪᴄᴛ ᴜsᴇʀs ᴏʀ ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ɪɴ sᴜᴅᴏ ᴜsᴇʀs")
 
-@app.on_message(filters.command("kickall") & admin_filter & filters.user(SUDO | SPECIAL_USER_ID))
+@handler("kickall", dev_cmd=True, admin_cmd=True)
 async def kick_all(_, msg):
     chat_id = msg.chat.id
     bot = await app.get_chat_member(chat_id, BOT_ID)
@@ -104,7 +111,7 @@ async def kick_all(_, msg):
     else:
         await msg.reply_text("ᴇɪᴛʜᴇʀ ɪ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴛʜᴇ ʀɪɡʜᴛ ᴛᴏ ʀᴇsᴛʀɪᴄᴛ ᴜsᴇʀs ᴏʀ ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ɪɴ sᴜᴅᴏ ᴜsᴇʀs")
 
-@app.on_message(filters.command("muteall") & admin_filter & filters.user(SUDO | SPECIAL_USER_ID))
+@handler("muteall", dev_cmd=True, admin_cmd=True)
 async def mute_all(_, msg):
     chat_id = msg.chat.id
     bot = await app.get_chat_member(chat_id, BOT_ID)
@@ -120,7 +127,7 @@ async def mute_all(_, msg):
     else:
         await msg.reply_text("ᴇɪᴛʜᴇʀ ɪ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴛʜᴇ ʀɪɡʜᴛ ᴛᴏ ʀᴇsᴛʀɪᴄᴛ ᴜsᴇʀs ᴏʀ ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ɪɴ sᴜᴅᴏ ᴜsᴇʀs")
 
-@app.on_message(filters.command("unmuteall") & admin_filter & filters.user(SUDO | SPECIAL_USER_ID))
+@hanlder("unbanall", dev_cmd=True, admin_cmd=True)
 async def unmute_all(_, msg):
     chat_id = msg.chat.id
     bot = await app.get_chat_member(chat_id, BOT_ID)
@@ -136,7 +143,7 @@ async def unmute_all(_, msg):
     else:
         await msg.reply_text("ᴇɪᴛʜᴇʀ ɪ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴛʜᴇ ʀɪɡʜᴛ ᴛᴏ ʀᴇsᴛʀɪᴄᴛ ᴜsᴇʀs ᴏʀ ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ɪɴ sᴜᴅᴏ ᴜsᴇʀs")
 
-@app.on_message(filters.command("unpinall") & admin_filter & filters.user(SUDO | SPECIAL_USER_ID))
+@hanlder("unpinall", dev_cmd=True, admin_cmd=True)
 async def unpin_all(_, msg):
     chat_id = msg.chat.id
     bot = await app.get_chat_member(chat_id, BOT_ID)
