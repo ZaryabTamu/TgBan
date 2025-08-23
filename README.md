@@ -1,6 +1,6 @@
 # Ban All Bot
 
-BanAll Bot is a powerful Telegram bot designed to help group administrators manage users efficiently. With simple commands, admins can ban, unban, kick, mute, or unmute all members in a group, as well as manage other admin functions like unpinning messages. It is particularly useful for cleaning up large groups or taking quick action against problematic users.
+Ban All Bot is a powerful Telegram bot designed to help group administrators manage users efficiently. With simple commands, admins can ban, unban, kick, mute, or unmute all members in a group, as well as manage other admin functions like unpinning messages. It is particularly useful for cleaning up large groups or taking quick action against problematic users.
 
 ## Features
 
@@ -21,8 +21,8 @@ BanAll Bot is a powerful Telegram bot designed to help group administrators mana
 Before you start, you will need:
 
 - A Telegram bot token from [BotFather](https://t.me/BotFather).
-- Generate your id from [Raiden_Robot](https://t.me/Raiden_Robot)
-- Add [Raiden_Robot](https://t.me/Raiden_Robot) in your group and Make admin
+- Generate your id from [𝖲𝗒𝗅𝖿𝗂𝖾](https://t.me/Sylfie_Roxbot)
+- Add [𝖲𝗒𝗅𝖿𝗂𝖾](https://t.me/Sylfie_Roxbot) in your group and Make admin
 - Python 3.10 or higher installed on your machine or server.
 - A platform to run the bot (local server or cloud hosting).
 
@@ -32,9 +32,13 @@ To set up the bot on your local machine:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/hasnainkk-07/BanAllBot.git
-   cd BanAllBot
+   git clone https://github.com/hasnainkk-07/Tg-BanAll.git
+   cd Tg-BanAll
 
+2. **Run the Bot**
+ ```bash
+python3 -m hasnainkk   
+```
 
 
 
@@ -43,4 +47,4 @@ To set up the bot on your local machine:
 
 
 # Deploy To Heroku 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/hasnainkk-07/BanAllBot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/hasnainkk-07/Tg-BanAll)
