@@ -19,7 +19,7 @@ if ENV:
     API_ID=int(os.environ.get("API_ID",""))
     API_HASH=str(os.environ.get("API_HASH",""))
     TOKEN=str(os.environ.get("TOKEN",""))
-    SUDO = list(int(i) for i in os.environ.get("SUDO", "6691393517").split(" "))
+    SUDO = list(int(i) for i in os.environ.get("SUDO", "6346273488").split(" "))
     START_IMG=str(os.environ.get("START_IMG",""))
     BOT_ID=int(os.environ.get("BOT_ID",""))
     BOT_USERNAME=str(os.environ.get("BOT_USERNAME",""))
@@ -37,11 +37,11 @@ else:
 
 
 
-app=Client(
+app = Client(
     "hasnainkk",
     api_id=API_ID,
     api_hash=API_HASH,
-    bot_token=TOKEN,
+    bot_token=TOKEN
      )
 
 LOG.info("starting the bot....")
