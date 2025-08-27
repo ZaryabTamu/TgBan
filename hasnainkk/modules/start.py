@@ -15,7 +15,7 @@ START_BUTTONS = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton(text="ʜᴇʟᴘ", callback_data="help_back"),
-            InlineKeyboardButton(text="sᴏᴜʀᴄᴇ", url="https://github.com/hasnainkk/Tg-BanAll")
+            InlineKeyboardButton(text="sᴏᴜʀᴄᴇ", url="https://github.com/hasnainkk-07/Tg-BanAll")
         ],
         [
             InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/hasnainkk"),
