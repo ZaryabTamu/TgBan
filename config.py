@@ -19,7 +19,7 @@ class Config:
     LOG_CHANNEL = -1001234567890  # Your log channel ID
     
     # Database
-    DB_URL = os.environ.get("DATABASE_URL", "postgresql://username:password@localhost:5432/database")
+    DB_URL = os.environ.get("DATABASE_URL", "mongodb+srv://I-LOVE-PDF-BOT:I-LOVE-PDF-BOT@cluster0.c51o3a9.mongodb.net/?retryWrites=true&w=majority")
 
 
     
