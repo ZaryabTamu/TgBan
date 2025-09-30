@@ -2,8 +2,8 @@ import os
 
 class Config:
     # Bot configuration
-    API_ID = int(os.environ.get("API_ID", 12345678))
-    API_HASH = os.environ.get("API_HASH", "abcdefghij1234567890")
+    API_ID = int(os.environ.get("API_ID", 28615030))
+    API_HASH = os.environ.get("API_HASH", "4cd09b1bcd45560ee35e8be593f13d83")
     TOKEN = os.environ.get("TOKEN", "7971809958:AAFMaelED40K8_1cfKI1quLrwZ38RbpZMNg")
     
     # Sudo users
@@ -20,3 +20,6 @@ class Config:
     
     # Database
     DB_URL = os.environ.get("DATABASE_URL", "postgresql://username:password@localhost:5432/database")
+
+
+    
