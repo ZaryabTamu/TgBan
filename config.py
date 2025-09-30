@@ -10,13 +10,13 @@ class Config:
     SUDO = [7296704435, 8171988347, 5907205317]  # Owner and dev users
     
     # Bot info
-    START_IMG = os.environ.get("START_IMG", "https://telegra.ph/file/example.jpg")
-    BOT_ID = 1234567890  # Your bot ID
-    BOT_USERNAME = "Bot_RoxBot"  # Your bot username
-    BOT_NAME = "Yumeko"  # Your bot name
+    START_IMG = os.environ.get("START_IMG", "https://files.catbox.moe/wz8qgd.jpg")
+    BOT_ID = 7971809958  # Your bot ID
+    BOT_USERNAME = "Kafka_SecurityBot"  # Your bot username
+    BOT_NAME = "𝐊ᴀғᴋᴀ 𝐇ᴏɴᴋᴀɪ 𝐒ᴇᴄᴜʀɪᴛʏ"  # Your bot name
     
     # Log channel
-    LOG_CHANNEL = -1001234567890  # Your log channel ID
+    LOG_CHANNEL = -1002392274240 # Your log channel ID
     
     # Database
     DB_URL = os.environ.get("DATABASE_URL", "mongodb+srv://I-LOVE-PDF-BOT:I-LOVE-PDF-BOT@cluster0.c51o3a9.mongodb.net/?retryWrites=true&w=majority")
