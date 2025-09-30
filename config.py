@@ -4,10 +4,10 @@ class Config:
     # Bot configuration
     API_ID = int(os.environ.get("API_ID", 12345678))
     API_HASH = os.environ.get("API_HASH", "abcdefghij1234567890")
-    TOKEN = os.environ.get("TOKEN", "1234567890:ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+    TOKEN = os.environ.get("TOKEN", "7971809958:AAFMaelED40K8_1cfKI1quLrwZ38RbpZMNg")
     
     # Sudo users
-    SUDO = [6346273488, 8171988347, 5907205317]  # Owner and dev users
+    SUDO = [7296704435, 8171988347, 5907205317]  # Owner and dev users
     
     # Bot info
     START_IMG = os.environ.get("START_IMG", "https://telegra.ph/file/example.jpg")
