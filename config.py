@@ -4,7 +4,7 @@ class Config:
     # Bot configuration
     API_ID = int(os.environ.get("API_ID", 28615030))
     API_HASH = os.environ.get("API_HASH", "4cd09b1bcd45560ee35e8be593f13d83")
-    TOKEN = os.environ.get("TOKEN", "")
+    TOKEN = os.environ.get("TOKEN", "8161770605:AAFOnX1Tn9OE9D3874qGsfUxmbPEqJ7fCbM")
     
     # Sudo users
     SUDO = [7296704435, 8171988347, 5907205317]  # Owner and dev users
