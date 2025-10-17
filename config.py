@@ -7,7 +7,7 @@ class Config:
     TOKEN = os.environ.get("TOKEN", "8161770605:AAFOnX1Tn9OE9D3874qGsfUxmbPEqJ7fCbM")
     
     # Sudo users
-    SUDO = [7296704435, 8171988347, 5907205317]  # Owner and dev users
+    SUDO = [6125202012, 8171988347, 5907205317]  # Owner and dev users
     
     # Bot info
     START_IMG = os.environ.get("START_IMG", "https://files.catbox.moe/wz8qgd.jpg")
